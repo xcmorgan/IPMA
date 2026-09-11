@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Breakdown Structure | Project Management Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">PM</span>
+            <span class="brand-text">Project Management Mastery</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="scope.html">Scope Management</a></li>
+            <li><a href="wbs.html" class="active">WBS</a></li>
+            <li><a href="scheduling.html">Scheduling</a></li>
+            <li><a href="critical-path.html">Critical Path</a></li>
+            <li><a href="software.html">PM Software</a></li>
+            <li><a href="reporting.html">Reporting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <span class="breadcrumb">Topic 2 of 6</span>
+            <h1>Work Breakdown Structure (WBS)</h1>
+            <p class="page-description">Master the art of decomposing project deliverables into manageable work packages using hierarchical breakdown and WBS dictionary techniques.</p>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <div class="container">
+            <div class="content-grid">
+                <aside class="sidebar">
+                    <nav class="toc">
+                        <h3>On This Page</h3>
+                        <ul>
+                            <li><a href="#overview">WBS Overview</a></li>
+                            <li><a href="#decomposition">Decomposition Process</a></li>
+                            <li><a href="#eco-wbs">EcoTech WBS</a></li>
+                            <li><a href="#dictionary">WBS Dictionary</a></li>
+                            <li><a href="#formats">WBS Formats</a></li>
+                            <li><a href="#best-practices">Best Practices</a></li>
+                            <li><a href="#calculator">WBS Calculator</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <article class="main-content">
+                    <section id="overview" class="content-section">
+                        <h2>What is a Work Breakdown Structure?</h2>
+                        <p class="lead">The WBS is a deliverable-oriented hierarchical decomposition of the work to be executed by the project team to accomplish the project objectives and create the required deliverables.</p>
+                        
+                        <div class="info-box">
+                            <h4>📚 Key Principle (7th Edition)</h4>
+                            <p>"The WBS represents 100% of the work defined by the project scope. Each level of decomposition represents increasingly detailed definitions of project work."</p>
+                        </div>
+
+                        <h3>The 100% Rule</h3>
+                        <p>The WBS must capture <strong>all</strong> project work:</p>
+                        <ul>
+                            <li>✅ The sum of work at the child level must equal 100% of work at the parent level</li>
+                            <li>✅ No work should exist outside the WBS (no "hidden" work)</li>
+                            <li>✅ No work should be duplicated (no overlap between elements)</li>
+                        </ul>
+                    </section>
+
+                    <section id="decomposition" class="content-section">
+                        <h2>The Decomposition Process</h2>
+                        
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Identify Major Deliverables</h4>
+                                    <p>Start with the project scope statement. Identify the major deliverables or phases.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Determine Decomposition Level</h4>
+                                    <p>Continue breaking down until work packages are 8-80 hours (the "8/80 rule").</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Verify 100% Coverage</h4>
+                                    <p>Ensure all scope is represented and no work is duplicated.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Create WBS Dictionary</h4>
+                                    <p>Document detailed information for each work package.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tip-box">
+                            <h4>💡 The 8/80 Rule</h4>
+                            <p>Work packages should be sized between 8 hours (1 day) and 80 hours (2 weeks). This provides enough detail for accurate estimation while keeping management overhead reasonable.</p>
+                        </div>
+                    </section>
+
+                    <section id="eco-wbs" class="content-section">
+                        <h2>Case Study: EcoTech Solar WBS</h2>
+                        
+                        <div class="wbs-visual">
+                            <h4>Level 0: Project</h4>
+                            <div class="wbs-level level-0">
+                                <div class="wbs-node">
+                                    <span class="node-code">0.0</span>
+                                    <span class="node-name">EcoTech Solar Project</span>
+                                    <span class="node-budget">$2,500,000</span>
+                                </div>
+                            </div>
+
+                            <h4>Level 1: Major Deliverables</h4>
+                            <div class="wbs-level level-1">
+                                <div class="wbs-node">
+                                    <span class="node-code">1.0</span>
+                                    <span class="node-name">Project Management</span>
+                                    <span class="node-budget">$250,000</span>
+                                </div>
+                                <div class="wbs-node">
+                                    <span class="node-code">2.0</span>
+                                    <span class="node-name">Site Preparation</span>
+                                    <span class="node-budget">$300,000</span>
+                                </div>
+                                <div class="wbs-node">
+                                    <span class="node-code">3.0</span>
+                                    <span class="node-name">Procurement</span>
+                                    <span class="node-budget">$1,200,000</span>
+                                </div>
+                                <div class="wbs-node">
+                                    <span class="node-code">4.0</span>
+                                    <span class="node-name">Installation</span>
+                                    <span class="node-budget">$600,000</span>
+                                </div>
+                                <div class="wbs-node">
+                                    <span class="node-code">5.0</span>
+                                    <span class="node-name">Testing & Commissioning</span>
+                                    <span class="node-budget">$100,000</span>
+                                </div>
+                                <div class="wbs-node">
+                                    <span class="node-code">6.0</span>
+                                    <span class="node-name">Training & Handover</span>
+                                    <span class="node-budget">$50,000</span>
+                                </div>
+                            </div>
+
+                            <h4>Level 2: Work Packages (Sample)</h4>
+                            <div class="wbs-level level-2">
+                                <div class="wbs-group">
+                                    <h5>1.0 Project Management</h5>
+                                    <div class="wbs-node">
+                                        <span class="node-code">1.1</span>
+                                        <span class="node-name">Project Planning</span>
+                                        <span class="node-budget">$40,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">1.2</span>
+                                        <span class="node-name">Quality Management</span>
+                                        <span class="node-budget">$60,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">1.3</span>
+                                        <span class="node-name">Risk Management</span>
+                                        <span class="node-budget">$50,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">1.4</span>
+                                        <span class="node-name">Stakeholder Management</span>
+                                        <span class="node-budget">$100,000</span>
+                                    </div>
+                                </div>
+                                <div class="wbs-group">
+                                    <h5>3.0 Procurement</h5>
+                                    <div class="wbs-node">
+                                        <span class="node-code">3.1</span>
+                                        <span class="node-name">Solar Panels (800 units)</span>
+                                        <span class="node-budget">$720,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">3.2</span>
+                                        <span class="node-name">Inverters (10 units)</span>
+                                        <span class="node-budget">$180,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">3.3</span>
+                                        <span class="node-name">Mounting Systems</span>
+                                        <span class="node-budget">$180,000</span>
+                                    </div>
+                                    <div class="wbs-node">
+                                        <span class="node-code">3.4</span>
+                                        <span class="node-name">Monitoring Equipment</span>
+                                        <span class="node-budget">$120,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wbs-validation">
+                            <h4>✅ 100% Rule Verification</h4>
+                            <table>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Sum of Children</th>
+                                    <th>Parent Value</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>Level 1</td>
+                                    <td>$250K + $300K + $1,200K + $600K + $100K + $50K</td>
+                                    <td>$2,500,000</td>
+                                    <td class="status-pass">✓ Match</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0 PM</td>
+                                    <td>$40K + $60K + $50K + $100K</td>
+                                    <td>$250,000</td>
+                                    <td class="status-pass">✓ Match</td>
+                                </tr>
+                                <tr>
+                                    <td>3.0 Procurement</td>
+                                    <td>$720K + $180K + $180K + $120K</td>
+                                    <td>$1,200,000</td>
+                                    <td class="status-pass">✓ Match</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section id="dictionary" class="content-section">
+                        <h2>WBS Dictionary</h2>
+                        <p>The WBS Dictionary provides detailed information about each work package. It serves as the foundation for scheduling, estimating, and monitoring.</p>
+
+                        <div class="dictionary-sample">
+                            <h4>Sample WBS Dictionary Entries</h4>
+                            
+                            <div class="dict-entry">
+                                <div class="dict-header">
+                                    <span class="dict-code">2.2</span>
+                                    <span class="dict-title">Roof Reinforcement</span>
+                                </div>
+                                <div class="dict-body">
+                                    <div class="dict-row">
+                                        <span class="dict-label">Description:</span>
+                                        <span class="dict-value">Structural upgrades to support solar panel load including beam reinforcement and load distribution analysis</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Responsible:</span>
+                                        <span class="dict-value">Structural Engineer (Lead: James Morrison, PE)</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Duration:</span>
+                                        <span class="dict-value">4 weeks</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Cost:</span>
+                                        <span class="dict-value">$180,000</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Acceptance Criteria:</span>
+                                        <span class="dict-value">Structural engineer sign-off, passes city inspection, load test documentation</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Dependencies:</span>
+                                        <span class="dict-value">Permit approval (2.1), Site survey completion</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Resources:</span>
+                                        <span class="dict-value">Structural crew (4), Crane operator, Steel beams, Concrete</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Milestones:</span>
+                                        <span class="dict-value">Week 2: Beam installation complete, Week 4: Final inspection</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dict-entry">
+                                <div class="dict-header">
+                                    <span class="dict-code">4.2</span>
+                                    <span class="dict-title">Panel Installation</span>
+                                </div>
+                                <div class="dict-body">
+                                    <div class="dict-row">
+                                        <span class="dict-label">Description:</span>
+                                        <span class="dict-value">Mount and connect all 800 solar panels to mounting system and electrical infrastructure</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Responsible:</span>
+                                        <span class="dict-value">Installation Crew (Lead: Maria Santos)</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Duration:</span>
+                                        <span class="dict-value">6 weeks</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Cost:</span>
+                                        <span class="dict-value">$240,000</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Acceptance Criteria:</span>
+                                        <span class="dict-value">All panels securely mounted, electrical connections torqued to spec, visual inspection passed</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Dependencies:</span>
+                                        <span class="dict-value">Mounting system complete (4.1), Panels delivered (3.1)</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Resources:</span>
+                                        <span class="dict-value">Installation crew (8), Lift equipment, Torque wrenches</span>
+                                    </div>
+                                    <div class="dict-row">
+                                        <span class="dict-label">Milestones:</span>
+                                        <span class="dict-value">Week 2: 25% complete, Week 4: 50% complete, Week 6: 100% complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="formats" class="content-section">
+                        <h2>WBS Formats</h2>
+                        
+                        <div class="format-tabs">
+                            <button class="tab-btn active" onclick="showFormat('outline')">Outline Format</button>
+                            <button class="tab-btn" onclick="showFormat('tree')">Tree Diagram</button>
+                            <button class="tab-btn" onclick="showFormat('tabular')">Tabular Format</button>
+                        </div>
+
+                        <div id="outline-format" class="format-content active">
+                            <h4>Outline Format (Most Common)</h4>
+                            <div class="code-block">
+                                <pre>
+1.0 Project Management ($250,000)
+    1.1 Project Planning ($40,000)
+    1.2 Quality Management ($60,000)
+    1.3 Risk Management ($50,000)
+    1.4 Stakeholder Management ($100,000)
+
+2.0 Site Preparation ($300,000)
+    2.1 Site Survey ($45,000)
+    2.2 Roof Reinforcement ($180,000)
+    2.3 Electrical Room Preparation ($75,000)
+
+3.0 Procurement ($1,200,000)
+    3.1 Solar Panels - 800 units ($720,000)
+    3.2 Inverters - 10 units ($180,000)
+    3.3 Mounting Systems ($180,000)
+    3.4 Monitoring Equipment ($120,000)
+                                </pre>
+                            </div>
+                        </div>
+
+                        <div id="tree-format" class="format-content">
+                            <h4>Tree Diagram (Visual)</h4>
+                            <div class="tree-visual">
+                                <div class="tree-level">
+                                    <div class="tree-root">EcoTech Solar Project</div>
+                                </div>
+                                <div class="tree-branches">
+                                    <div class="tree-branch">PM</div>
+                                    <div class="tree-branch">Site Prep</div>
+                                    <div class="tree-branch">Procurement</div>
+                                    <div class="tree-branch">Installation</div>
+                                    <div class="tree-branch">Testing</div>
+                                    <div class="tree-branch">Training</div>
+                                </div>
+                            </div>
+                            <p class="format-note">Best for presentations and stakeholder communications. Shows hierarchy clearly.</p>
+                        </div>
+
+                        <div id="tabular-format" class="format-content">
+                            <h4>Tabular Format (Spreadsheet-Friendly)</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>WBS Code</th>
+                                        <th>Element Name</th>
+                                        <th>Parent</th>
+                                        <th>Budget</th>
+                                        <th>Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0.0</td>
+                                        <td>EcoTech Solar Project</td>
+                                        <td>—</td>
+                                        <td>$2,500,000</td>
+                                        <td>S. Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.0</td>
+                                        <td>Project Management</td>
+                                        <td>0.0</td>
+                                        <td>$250,000</td>
+                                        <td>S. Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.1</td>
+                                        <td>Project Planning</td>
+                                        <td>1.0</td>
+                                        <td>$40,000</td>
+                                        <td>S. Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.0</td>
+                                        <td>Site Preparation</td>
+                                        <td>0.0</td>
+                                        <td>$300,000</td>
+                                        <td>J. Morrison</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section id="best-practices" class="content-section">
+                        <h2>WBS Best Practices</h2>
+                        
+                        <div class="practices-grid">
+                            <div class="practice-card good">
+                                <h4>✅ DO</h4>
+                                <ul>
+                                    <li>Use nouns for deliverables (not verbs)</li>
+                                    <li>Apply the 100% rule consistently</li>
+                                    <li>Keep work packages 8-80 hours</li>
+                                    <li>Involve the team in decomposition</li>
+                                    <li>Base on deliverables, not phases</li>
+                                    <li>Use consistent numbering</li>
+                                    <li>Create WBS dictionary entries</li>
+                                </ul>
+                            </div>
+                            <div class="practice-card bad">
+                                <h4>❌ DON'T</h4>
+                                <ul>
+                                    <li>Include project phases as elements</li>
+                                    <li>Make work packages too large</li>
+                                    <li>Forget the WBS dictionary</li>
+                                    <li>Include "project management" as catch-all</li>
+                                    <li>Duplicate work across branches</li>
+                                    <li>Decompose everything to same level</li>
+                                    <li>Create WBS in isolation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="common-mistakes">
+                            <h4>Common WBS Mistakes</h4>
+                            <div class="mistake">
+                                <h5>Mistake: Verb-Based Elements</h5>
+                                <p><strong>Wrong:</strong> "Plan Project" "Execute Project" "Monitor Project"</p>
+                                <p><strong>Right:</strong> "Project Plan" "Installed System" "Performance Reports"</p>
+                            </div>
+                            <div class="mistake">
+                                <h5>Mistake: Forgetting 100% Rule</h5>
+                                <p>Parent budget: $100,000. Sum of children: $85,000. Missing $15,000 of work!</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="calculator" class="content-section">
+                        <h2>Interactive: WBS Calculator</h2>
+                        <p>Use this calculator to verify your WBS follows the 100% rule.</p>
+                        
+                        <div class="calculator">
+                            <h4>Verify WBS Roll-Up</h4>
+                            <div class="calc-inputs">
+                                <div class="calc-row">
+                                    <label>Parent Element Budget:</label>
+                                    <input type="number" id="parent-budget" placeholder="e.g., 250000">
+                                </div>
+                                <div class="calc-children">
+                                    <div class="calc-row">
+                                        <label>Child 1 Budget:</label>
+                                        <input type="number" id="child1" placeholder="e.g., 40000">
+                                    </div>
+                                    <div class="calc-row">
+                                        <label>Child 2 Budget:</label>
+                                        <input type="number" id="child2" placeholder="e.g., 60000">
+                                    </div>
+                                    <div class="calc-row">
+                                        <label>Child 3 Budget:</label>
+                                        <input type="number" id="child3" placeholder="e.g., 50000">
+                                    </div>
+                                    <div class="calc-row">
+                                        <label>Child 4 Budget:</label>
+                                        <input type="number" id="child4" placeholder="e.g., 100000">
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" onclick="calculateWBS()">Calculate</button>
+                            </div>
+                            <div id="calc-result" class="calc-result"></div>
+                        </div>
+                    </section>
+
+                    <div class="navigation-buttons">
+                        <a href="scope.html" class="btn btn-secondary">← Previous: Scope Document</a>
+                        <a href="scheduling.html" class="btn btn-primary">Next: Network Planning →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Project Management Mastery. Based on Successful Project Management 7th Edition.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showFormat(format) {
+            document.querySelectorAll('.format-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(format + '-format').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function calculateWBS() {
+            const parent = parseFloat(document.getElementById('parent-budget').value) || 0;
+            const c1 = parseFloat(document.getElementById('child1').value) || 0;
+            const c2 = parseFloat(document.getElementById('child2').value) || 0;
+            const c3 = parseFloat(document.getElementById('child3').value) || 0;
+            const c4 = parseFloat(document.getElementById('child4').value) || 0;
+            
+            const sum = c1 + c2 + c3 + c4;
+            const diff = parent - sum;
+            
+            let resultHTML = '';
+            if (diff === 0) {
+                resultHTML = `<div class="result-success">✅ PERFECT! Sum of children ($${sum.toLocaleString()}) equals parent ($${parent.toLocaleString()}). 100% rule satisfied.</div>`;
+            } else if (Math.abs(diff) < parent * 0.05) {
+                resultHTML = `<div class="result-warning">⚠️ CLOSE. Sum: $${sum.toLocaleString()}, Parent: $${parent.toLocaleString()}. Difference: $${Math.abs(diff).toLocaleString()} (${(diff/parent*100).toFixed(1)}%)</div>`;
+            } else {
+                resultHTML = `<div class="result-error">❌ MISMATCH! Sum: $${sum.toLocaleString()}, Parent: $${parent.toLocaleString()}. Missing: $${diff.toLocaleString()}</div>`;
+            }
+            
+            document.getElementById('calc-result').innerHTML = resultHTML;
+        }
+    </script>
+</body>
+</html>
